@@ -24,3 +24,8 @@ document.getElementById('userNuberSub').onclick = function() {
         gmText.innerText = "You have guessed low. Go higher.";
     }
 }
+
+function musicControl() {
+    const gameAudio = document.getElementById('gameAudio');
+    gameAudio.remove();
+}

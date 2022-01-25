@@ -12,6 +12,11 @@
 </head>
 <body>
     <section class="mainGameSec">
+        <div class="music">
+            <img src="Img/music.svg" class="musicBtn" id="musicBtn" onclick="musicControl()">
+                <audio id="gameAudio" autoplay="true" loop src="Music/2019-08-25_-_8bit-Smooth_Presentation_-_David_Fesliyan.mp3"></audio>
+            </img>
+        </div>
         <div class="gameTitle">
             <h1>GUESSING GAME</h1>
         </div>
@@ -22,10 +27,10 @@
             <button id="startBtn" onclick="startGame()">START</button>
         </div>
         <div class="gameDisplayText">
-            <p id="gmText">GAME MASTER TEXT GOES HERE</p>
+            <p id="gmText">PRESS START TO... START</p>
         </div>
         <div class="gameControls" id="gameControls">
-            <input type="text" name="userNuberInput" id="userNuberInp" class="userNuberInp">
+            <input type="text" name="userNuberInput" autocomplete="off" id="userNuberInp" class="userNuberInp">
             <input type="submit" name="userNuberSubmit" id="userNuberSub" class="userNuberSub">
         </div>
     </section>
