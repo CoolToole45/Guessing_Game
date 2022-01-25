@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(176, 240, 229);
+}
+
+.mainGameSec {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    font-family: "PressStart2P-Regular";
+}
+
+.gameTitle h1 {
+    font-size: 5vh;
+}
+
+.gameMaster {
+    display: contents;
+}
+
+.gameMaster img {
+    width: 20%;
+}
+
+.gameControls {
+    display: none;
+    margin: 3vh 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameControls > * {
+    margin: 1vh 0;
+}
+
+.userNuberInp {
+    outline: none;
+    text-align: center;
+    padding: 2vh;
+    font-family: "PressStart2P-Regular";
+    font-size: 5vh;
+    width: 30%;
+}
+
+.userNuberSub {
+    font-family: "PressStart2P-Regular";
+    background-color: rgb(255, 25, 94);
+    border: 2px solid rgb(189, 27, 75);
+    padding: 2vh;
+}
+
+.userNuberSub:hover {
+    background-color: rgb(189, 27, 75);
+    border: 2px solid rgb(255, 25, 94);
+    color: white;
+}
+
+.startGame {
+    margin: 3vh 0;
+}
+
+.startGame button {
+    font-family: "PressStart2P-Regular";
+    padding: 2vh;
+    background-color: rgb(255, 25, 94);
+    border: 2px solid rgb(189, 27, 75);
+}
+
+.startGame button:hover {
+    background-color: rgb(189, 27, 75);
+    border: 2px solid rgb(255, 25, 94);
+    color: white;
+}
