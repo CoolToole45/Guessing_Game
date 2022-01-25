@@ -1,2 +1,2 @@
-# template
-A simple template for future projects
+# Guesing_Game
+A simple guessing game
