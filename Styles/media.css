@@ -1,3 +1,57 @@
-@media (min-width: 992px) {
-    
+@media (max-width: 1630px) {
+    .gameTitle h1 {
+        font-size: 3vh;
+    }
+
+    .rotatingCoin {
+        width: 10%;
+    }
+
+    .gameMaster img {
+        width: 50%;
+    }
+
+    .gameDisplayText p {
+        font-size: 1.9vh;
+        text-align: center;
+    }
+
+    .gameRuleSec {
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .music {
+        width: 97%;
+    }
+
+    .rules {
+        margin: 1vh;
+        padding: 1vh;
+        line-height: 2.5vh;
+    }
+}
+
+@media (max-width: 428px) {
+    .gameTitle h1 {
+        font-size: 2.6vh;
+        text-align: center;
+    }
+
+    .rotatingCoin {
+        width: 12%;
+    }
+
+    .gameDisplayText p {
+        font-size: 1.9vh;
+        text-align: center;
+    }
+
+    .rules {
+        margin: 1vh;
+        padding: 1vh;
+        line-height: 2.5vh;
+    }
 }

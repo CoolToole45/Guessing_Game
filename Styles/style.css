@@ -1,24 +1,56 @@
+/* Global */
 body {
     background-color: rgb(176, 240, 229);
 }
 
+
+/* Rules Aside */
+.gameRuleSec {
+    position: absolute;
+    width: 20%;
+}
+
+.rules {
+    margin: 2vh;
+    padding: 2vh;
+    border: 5px solid rgb(255, 94, 0);
+    background-color: rgb(255, 179, 79);
+    font-family: "PressStart2P-Regular";
+    line-height: 3vh;
+}
+
+.rules em {
+    color: aqua;
+    border-bottom: 5px solid aqua;
+}
+
+
+/* Main Section */
 .mainGameSec {
     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4vh;
     font-family: "PressStart2P-Regular";
 }
 
 .gameTitle {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }   
 
 .gameTitle h1 {
     font-size: 5vh;
+}
+
+.rotatingCoin {
+    width: 5%;
+    margin-bottom: 0.5vh;
+}
+
+.rotateLeft {
+    transform: rotate(45deg);
 }
 
 .music {
@@ -37,7 +69,8 @@ body {
     cursor: pointer;
 }
 
-.musicBtn:hover {
+.musicBtn:hover,
+.musicBtn:active {
     background-color: rgb(172, 178, 184);
     border: 1px solid aliceblue;
 }
@@ -52,7 +85,7 @@ body {
     animation-name: float;
     animation-iteration-count: infinite;
     animation-duration: 4s;
-    margin-bottom: 2vh;
+    margin-bottom: 1.5vh;
 }
 
 .gameControls {
@@ -76,14 +109,15 @@ body {
     border: 5px solid black;
 }
 
-.userNuberSub {
+.gameControlBtn {
     font-family: "PressStart2P-Regular";
     background-color: rgb(255, 25, 94);
     border: 2px solid rgb(189, 27, 75);
     padding: 2vh;
 }
 
-.userNuberSub:hover {
+.gameControlBtn:hover,
+.gameControlBtn:active {
     background-color: rgb(189, 27, 75);
     border: 2px solid rgb(255, 25, 94);
     color: white;
@@ -93,19 +127,10 @@ body {
     margin: 3vh 0;
 }
 
-.startGame button {
-    font-family: "PressStart2P-Regular";
-    padding: 2vh;
-    background-color: rgb(255, 25, 94);
-    border: 2px solid rgb(189, 27, 75);
+#resetBtn {
+    display: none;
+    margin: 1.5vh 0;
 }
-
-.startGame button:hover {
-    background-color: rgb(189, 27, 75);
-    border: 2px solid rgb(255, 25, 94);
-    color: white;
-}
-
 
 @keyframes float {
     0% {
@@ -120,3 +145,4 @@ body {
         transform: translateY(0px);
     }
 }
+

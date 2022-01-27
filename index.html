@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Guessing Game</title>
+    <link rel="icon" href="Img/Little Wizzard Guy 2.0.png">
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/reset.css">
     <link rel="stylesheet" href="Styles/fonts.css">
     <link rel="stylesheet" href="Styles/media.css">
 </head>
 <body>
+    <aside class="gameRuleSec">
+        <div class="rules">
+            <p>Rules:</p><br>
+            <p>The rules are very simple. The Game Master will think of a number between <em>0</em> and <em>10</em> and you will have to guess it.</p><br>
+            <p>If your chosen number is bigger or smaller than Game Masters number he will let you know.</p><br>
+            <p>Enjoy!</p>
+        </div>
+    </aside>
     <section class="mainGameSec">
         <div class="music">
             <img src="Img/music.svg" class="musicBtn" id="musicBtn" onclick="musicControl()">
@@ -18,20 +27,25 @@
             </img>
         </div>
         <div class="gameTitle">
+            <img src="Img/icon_1.png" id="rotatingCoinLeft" class="rotatingCoin" alt="rotatingCoin">
             <h1>GUESSING GAME</h1>
+            <img src="Img/icon_1.png" id="rotatingCoinRight" class="rotatingCoin" alt="rotatingCoin">
         </div>
         <div class="gameMaster">
             <img src="Img/Little Wizzard Guy 2.0.png" alt="gameMaster">
         </div>
         <div class="startGame">
-            <button id="startBtn" onclick="startGame()">START</button>
+            <button id="startBtn" class="gameControlBtn" onclick="startGame()">START</button>
         </div>
         <div class="gameDisplayText">
             <p id="gmText">PRESS START TO... START</p>
         </div>
         <div class="gameControls" id="gameControls">
-            <input type="text" name="userNuberInput" autocomplete="off" id="userNuberInp" class="userNuberInp">
-            <input type="submit" name="userNuberSubmit" id="userNuberSub" class="userNuberSub">
+            <input type="text" name="userNuberInput" autocomplete="off" id="userNuberInp" class="userNuberInp" maxlength="2">
+            <button type="submit" name="userNuberSubmit" id="userNuberSub" class="gameControlBtn">Submit</button>
+        </div>
+        <div class="resetControl">
+            <button class="gameControlBtn" id="resetBtn" onclick="resetGame()">Reset</button>
         </div>
     </section>
     <script src="JS/main.js"></script>
