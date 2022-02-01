@@ -76,7 +76,11 @@ body {
 }
 
 .gameMaster {
-    display: contents;
+    /* display: contents; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .gameMaster img {

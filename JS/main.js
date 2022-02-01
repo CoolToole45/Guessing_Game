@@ -1,3 +1,4 @@
+// Main Gameplay Logic.
 function startGame() {
     var secretNumber = Math.floor(Math.random(1, 10) * 11);
     console.log(secretNumber);
@@ -29,16 +30,19 @@ function startGame() {
     }
 }
 
-
+// Reset Game
 function resetGame() {
     startGame();
 }
 
+// Click To Stop Music
 function musicControl() {
     const gameAudio = document.getElementById('gameAudio');
     gameAudio.remove();   
 }
 
+
+// Animation For Decorational Coins
 function rotate() {
     const rotatingCoinLeft = document.getElementById('rotatingCoinLeft');
     if(!rotatingCoinLeft.classList.contains('rotateLeft')) {
